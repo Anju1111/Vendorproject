@@ -1,0 +1,57 @@
+<br><br>  <section id="cover">
+<div class="container" style="background-color: rgb(101, 163, 179)">
+    <h2 align:center>Add Vendor Details</h2>
+<form>
+    <input type = "hidden" name="vendor.vendorId"/>
+    <div class="col-10">
+    Enter vendor Name <input type = "text" class="form-control" [(ngModel)]="vendor.vendorName" name="pFName"/><br/>
+    </div>
+    <div class="col-10">
+    Enter Address: <input type = "text" class="form-control" [(ngModel)]="vendor.vendorAddress" name="pLName"/><br/>
+    <label for="form-control" class="col-2 col-form-label"> </label>
+    </div>
+    
+   <br>
+   
+   <div class="drop-down">
+   <label>Location: </label> 
+    <select class="form-control"  [(ngModel)]="vendor.location" name="location">
+        <option value="Chennai">Chennai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Trivandrum">Trivandrum</option>
+
+    </select>
+   </div>
+    <br>
+    <div class="col-10">
+        Enter service: <input type = "text" class="form-control" [(ngModel)]="vendor.service" name="service"/><br/>
+        <label for="form-control" class="col-2 col-form-label"> </label>
+        </div>
+    
+        <div class="col-10">
+            Enter pincode: <input type = "text" class="form-control" [(ngModel)]="vendor.pincode" name="pincode"/><br/>
+            <label for="form-control" class="col-2 col-form-label"> </label>
+            </div>
+            <div class="col-10">
+                Enter Contact Name: <input type = "text" class="form-control" [(ngModel)]="vendor.contactNames" name="contactName"/><br/>
+                <label for="form-control" class="col-2 col-form-label"> </label>
+                </div>
+        <div class="col-10">
+                    Enter Department: <input type = "text" class="form-control" [(ngModel)]="vendor.department" name="department"/><br/>
+                    <label for="form-control" class="col-2 col-form-label"> </label>
+                    </div>
+    <div class="col-10">
+                Enter Email: <input type = "text" class="form-control" [(ngModel)]="vendor.email" name="email"/><br/>
+                <label for="form-control" class="col-2 col-form-label"> </label>
+                </div>
+    <div class="col-10">
+                    Enter Phone: <input type = "text" class="form-control" [(ngModel)]="vendor.phone" name="phone"/><br/>
+                    <label for="form-control" class="col-2 col-form-label"> </label>
+                    </div>
+
+  <br>
+    <button (click)="addVendor()" style="margin-left:25%">Save Vendor</button>
+   <br><br>
+</form>
+</div>
+</section>
